@@ -26,7 +26,7 @@ namespace FoodOrdering.API
             {
                 options.AddPolicy("AllowAll", policy =>
                 {
-                    policy.WithOrigins("http://localhost:4200")
+                    policy.WithOrigins("https://food-ordering-eight-eosin.vercel.app")
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                 });
